@@ -56,4 +56,22 @@ public class LampadaInteligente
         string status = _estaLigada ? "Ligada" : "Desligada";
         return $"[Lâmpada {_marca}] Tecnologia: {_tecnologia} | Status: {status} | Brilho: {_brilho}%";
     }
+
 }
+
+class Program
+{   
+    static void Main()
+    {
+     LampadaInteligente minhaLampada = new LampadaInteligente("Philips", "LED");
+
+    Console.WriteLine(minhaLampada); // Usa o ToString()
+            
+    minhaLampada.AjustarBrilho(50); // Deve dar erro (está desligada)
+        
+    minhaLampada.Alternar();        
+    minhaLampada.AjustarBrilho(75); 
+
+    Console.WriteLine(minhaLampada);
+    }
+} 
