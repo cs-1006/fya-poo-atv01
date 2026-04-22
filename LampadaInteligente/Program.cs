@@ -1,4 +1,5 @@
 using System;
+namespace Atividade01;
 
 public class LampadaInteligente
 {
