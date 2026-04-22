@@ -89,7 +89,7 @@ class Program
 {
     static void Main()
     {
-        CofreDigital meuCofre = new CofreDigital("Seu Nome", "1234");
+        CofreDigital meuCofre = new CofreDigital("Nome", "1234");
 
         // Testando erro e bloqueio
         meuCofre.Abrir("0000"); // Erro 1
